@@ -1,8 +1,8 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "警保局移动充值",
-  "short_name": "警保局移动充值",
+  "name": "瑞生活",
+  "short_name": "瑞生活",
   "version": "io.cordova.hellocordova",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "author": "Apache Cordova Team",

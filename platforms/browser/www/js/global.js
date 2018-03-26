@@ -8,14 +8,14 @@ $(function () {
  * 
  */
 function initLayout () {
-	/**
+	/**  */
 	var pixclPatio = 1 / window.devicePixelRatio;
 	$('head').prepend('<meta name="viewport" content="width=device-width,initial-scale='+pixclPatio+',minimum-scale='+pixclPatio+',maximum-scale='+pixclPatio+',user-scalable=no" />');
-	*/
+	/**  */
 	var html = document.getElementsByTagName('html')[0];
 	var pageWidth = html.getBoundingClientRect().width;
-	alert("pageWidth: "+pageWidth);
-	//html.style.fontSize = pageWidth / 16+ 'px';
+	//alert("pageWidth: "+pageWidth);
+	html.style.fontSize = pageWidth / 16+ 'px';
     debugger;
 }
 
