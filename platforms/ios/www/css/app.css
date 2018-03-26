@@ -59,11 +59,10 @@ body {
 .listiconText {
   display: block;
   width: 100%;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
+  /* -webkit-transform:scale(0.8); -moz-transform:scale(0.8);*/
   text-align: center;
   font-size: 0.38518519rem;
-  margin-top: 0.17777778rem;
+  /* margin-top:6/@rem;*/
 }
 .listImg {
   display: block;
@@ -123,7 +122,8 @@ body {
   height: 1.48148148rem;
   vertical-align: middle;
   position: absolute;
-  left: 25%;
+  left: 50%;
+  margin-left: -0.81481481rem;
   top: 10%;
 }
 .am-navbar-nav a {
@@ -139,7 +139,7 @@ body {
 }
 .am-navbar-nav a.centerA .centerImg {
   display: inline-block;
-  margin-bottom: 0.14814815rem;
+  margin-bottom: 0.08888889rem;
   margin-top: 0.2962963rem;
 }
 .am-navbar-nav a.centerA .am-navbar-label {
@@ -301,6 +301,12 @@ h3.am-list-item-hd {
 .am-navbar-nav a .am-navbar-label {
   font-size: 0.38518519rem;
   margin-top: 0.08888889rem;
+  padding-top: 0;
+}
+.am-header-default .am-header-nav {
+  height: 2.17777778rem;
+  line-height: 2.17777778rem;
+  font-size: 0.53333333rem;
 }
 .am-header-default .am-header-nav > a {
   color: #fff;
@@ -396,6 +402,7 @@ h3.am-list-item-hd {
   display: inline-block;
   height: 2.22222222rem;
   line-height: 1.11111111rem;
+  margin-top: 0;
 }
 .am-navbar-nav a img {
   width: 1.03703704rem;
@@ -491,18 +498,132 @@ h3.am-list-item-hd {
   color: #ccc;
   z-index: 15;
 }
-.homebg {
+.bdHidden {
   overflow: hidden;
 }
-.homebg img {
-  display: block;
+.homebg {
+  overflow: hidden;
+  height: 28.44444444rem;
+  background: url("../images/homebg.png") no-repeat;
+  background-size: 100% 100%;
 }
 .logo {
   width: 10.01481481rem;
   height: 5.8962963rem;
+  overflow: hidden;
   position: absolute;
   top: 30%;
   left: 50%;
   margin-left: -5.00740741rem;
   margin-top: -1.76888889rem;
+}
+.logo img {
+  display: inline-block;
+  width: 10.01481481rem;
+  height: 5.8962963rem;
+}
+.loginlogo {
+  width: 4.72592593rem;
+  height: 5.54074074rem;
+  overflow: hidden;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  margin-left: -2.36296296rem;
+  margin-top: -0.66488889rem;
+}
+.loginlogo img {
+  display: inline-block;
+  width: 7.77777778rem;
+  height: 5.86666667rem;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+.inputCon {
+  width: 11.18518519rem;
+  margin: 0 auto;
+  margin-top: 75%;
+}
+.inputBox {
+  width: 11.18518519rem;
+  height: 1.95555556rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.17777778rem;
+  -webkit-border-radius: 0.17777778rem;
+  -moz-border-radius: 0.17777778rem;
+  background: #0a0808;
+}
+.am-form input[type=text].loginInput {
+  width: 9.00740741rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #fff;
+  border: none;
+  font-size: 0.53333333rem;
+  background: transparent;
+  padding: 0;
+  margin: 0.44444444rem 0;
+}
+.am-form input[type=text].loginInput:focus {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-modify: read-write-plaintext-only;
+  border: none;
+  box-shadow: none;
+}
+.userBg {
+  display: inline-block;
+  width: 2.04444444rem;
+  height: 1.95555556rem;
+}
+.userBg img {
+  display: block;
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  margin: 0 auto;
+  margin-top: 0.44444444rem;
+}
+.loginBtn {
+  display: block;
+  height: 2.22222222rem;
+  width: 11.18518519rem;
+  margin: 0 auto;
+  background: #ec900c;
+  font-size: 0.59259259rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.17777778rem;
+  -webkit-border-radius: 0.17777778rem;
+  -moz-border-radius: 0.17777778rem;
+}
+.loginBtn:hover {
+  color: #fff;
+}
+.moreBtn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.62222222rem;
+  color: #1c1617;
+  position: fixed;
+  bottom: 1.33333333rem;
+  left: 0;
+}
+.moreBtn:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 320px) {
+  .am-navbar-nav a .am-navbar-label {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  .am-navbar-nav a.centerA .centerImg {
+    margin-bottom: 0.05925926rem;
+  }
+  .listiconText {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
 }
